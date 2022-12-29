@@ -12,7 +12,7 @@ public class Main { // Implementing the Serializtion //implements Serializable
 		System.out.println("5. List Top 100 Students");
 		System.out.println("6. List Top 50 Subjects");
 		System.out.println("7. Add fake Student");
-		System.out.println("8. Add a fake Student");
+		System.out.println("8. Add a fake Subject");
 		System.out.println("9. Add a new Student");
 		System.out.println("10. Adding a new subject ");
 		System.out.println("11. Load 1000000 student in Students Table ");
@@ -81,9 +81,17 @@ public class Main { // Implementing the Serializtion //implements Serializable
 				break;
 				
 			case 11:
+				ShowTop ShowTopVariable5 = new ShowTop();
+				ShowTopVariable5.TopMillionStudent();
+				menue();
+				
 				break;
 				
 			case 12:
+				ShowTop ShowTopVariable6 = new ShowTop();
+				ShowTopVariable6.TophundradStudents();
+				menue();
+		
 				break;
 			
 

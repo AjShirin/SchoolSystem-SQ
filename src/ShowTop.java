@@ -15,6 +15,14 @@ public class ShowTop {
 	static void TopfiftySubjects() throws IOException { 
 		String sql = "SELECT * FROM Subjects ORDERED BY id LIMIT 50";
 }
+	
+	static void TopMillionStudent() throws IOException { 
+		String sql = "SELECT * FROM Student ORDERED BY id LIMIT 1000000";
+}
+	
+	static void TopThousandSubjects() throws IOException { 
+		String sql = "SELECT * FROM Subjects ORDERED BY id LIMIT 100000";
+}
 		
 	
 }
