@@ -17,7 +17,7 @@ public class SubjectTable {
 			String pass = "root";
 			
 			// Creating table  using SQL query
-			String sqlCreate =  ("create table Subjects(Id int primary key,title VARCHAR(8) not null, desc VARCHAR(250) not null, pricePerStudent DECIMAL )");
+			String sqlCreate =  ("create table Subjects(Id int primary key,title VARCHAR(8) not null, description VARCHAR(250) not null, pricePerStudent DECIMAL )");
 					
 
 			// Connection class object
@@ -39,10 +39,10 @@ public class SubjectTable {
 
 				// Executing query // sqlCreate
 				int m = st.executeUpdate(sqlCreate);
-				if (m >= 1)
-					System.out.println("false" );
+				if (m >= 0)
+					System.out.println("true" );
 				else
-					System.out.println("true");
+					System.out.println("false");
 
 				// Closing the connections
 				con.close();

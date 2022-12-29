@@ -39,10 +39,10 @@ public class StudentTable {
 
 				// Executing query // sqlCreate
 				int m = st.executeUpdate(sqlCreate);
-				if (m >= 1)
-					System.out.println("false" );
+				if (m >= 0)
+					System.out.println("true" );
 				else
-					System.out.println("true");
+					System.out.println("false");
 
 				// Closing the connections
 				con.close();
